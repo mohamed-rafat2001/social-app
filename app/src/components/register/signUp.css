@@ -1,0 +1,43 @@
+.right .form label {
+    color: #656565;
+    padding: 0;
+    margin: 2px;
+}
+
+form .submite {
+    background-color: #c3c3c3;
+    color: white;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+form .submite:hover {
+    background-color: #111111;
+    color: white;
+}
+
+.delay {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+form div {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.validation {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: -22px;
+
+
+}

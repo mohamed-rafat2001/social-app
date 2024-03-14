@@ -1,0 +1,53 @@
+ul {
+    height: 100vh;
+
+}
+
+.link-hover:hover {
+    background-color: #e7e7e8;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.link-hover {
+    /* width: fit-content; */
+}
+
+.log:hover .logOut {
+    display: flex;
+    align-items: center;
+    color: rgb(102, 100, 214);
+    visibility: visible;
+    translate: 25px 0px;
+
+}
+
+.logOut {
+    visibility: hidden;
+
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+}
+
+#exampleModal .modal-R {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+}
+
+#exampleModal .modal-W {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

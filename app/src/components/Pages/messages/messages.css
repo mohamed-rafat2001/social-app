@@ -1,0 +1,146 @@
+.message {
+    height: 100vh;
+}
+
+.search {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.icons-style {
+
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.icons-style:hover {
+    background-color: #7b7d804a
+}
+
+.chat {
+    height: 68%;
+    overflow-y: auto;
+
+}
+
+.user-chat {
+    background-color: rgb(77 76 76 / 11%);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.user-chat:hover {
+    background-color: #00000005;
+}
+
+.icon {
+    visibility: hidden;
+    color: grey;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+.icon:hover {
+    color: rgb(55, 55, 231);
+
+    background-color: #e1f0f8;
+}
+
+.user-chat:hover .icon {
+
+    visibility: visible;
+}
+
+.porfile-image {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+
+}
+
+.react-emoji {
+    outline: 0;
+    padding: 0;
+    margin-bottom: 0px;
+    width: 85%;
+}
+
+.react-emoji .react-input-emoji--placeholder {
+    outline-width: 0;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.react-emoji .react-input-emoji--wrapper {
+    min-height: 40px;
+}
+
+.react-emoji .react-input-emoji--input {
+    outline-width: 0;
+    padding: 0 10px;
+    margin-bottom: 0px;
+    overflow: auto;
+}
+
+.chat p {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 0;
+}
+
+.message-image {
+    width: 70%;
+    height: fit-content;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 1%;
+}
+
+.creatAt-message {
+    margin-top: 0;
+    margin-top: 5px;
+    font-size: 11px;
+    display: flex;
+    direction: rtl;
+    width: 50%;
+}
+
+.second-user .creatAt-message {
+    direction: ltr;
+    width: fit-content;
+}
