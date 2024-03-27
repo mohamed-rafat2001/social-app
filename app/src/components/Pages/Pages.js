@@ -52,13 +52,13 @@ function Pages() {
                     </Link>
                 </li>
                 <li className="nav-item rounded-pill link-hover">
-                    <Link className="nav-link mb-1 pb-0  text-black d-flex align-items-center h-100 " to={"/lists"}>
+                    <Link className="nav-link mb-1 pb-0  text-black d-flex align-items-center h-100 " to={"/Home/lists"}>
                         <i className="bi bi-card-list text-black fs-2 me-4"></i>
                         <h4 className='fs-5 m-0 align-items-center  d-none d-xl-flex'>Lists</h4>
                     </Link>
                 </li>
                 <li className="nav-item  rounded-pill link-hover">
-                    <Link className="nav-link mb-1 pb-0 text-black d-flex align-items-center h-100 " to={"/settings"}>
+                    <Link className="nav-link mb-1 pb-0 text-black d-flex align-items-center h-100 " to={"/Home/settings"}>
                         <i className="bi bi-gear text-black fs-2 me-4"></i>
                         <h4 className='fs-5 m-0 align-items-center  d-none d-xl-flex '>Settings</h4>
                     </Link>

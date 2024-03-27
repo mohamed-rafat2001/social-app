@@ -4,11 +4,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import { chatMessages } from '../services/messages'
 export const useSocket = ({ data }) => {
     const [onlineUsers, setOnlineUsers] = useState([])
-    const [isOnline, setOnline] = useState(false)
     const [socket, setSocket] = useState(null)
     const [userId, setId] = useState(null)
     const newMessage = useSelector(state => state.message.newMessage)
-    const [userDetails, setUserDetails] = useState({})
     const [chatOpen, setChatOpen] = useState(false)
     const [messageNotification, setMessageNotification] = useState([])
     const user = useSelector(state => state.chats.Chat)

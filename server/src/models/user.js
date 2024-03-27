@@ -8,14 +8,27 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true,
         unique: false,
-        lowercase: true
+
     },
     lastName: {
         type: String,
         required: true,
         trim: true,
         unique: false,
+
+    },
+    city: {
+        type: String,
+        required: true,
+        trim: true,
+        unique: false,
         lowercase: true
+    },
+    bio: {
+        type: String,
+        required: false,
+        trim: true,
+        unique: false,
     },
     idNumber: {
         type: Number,

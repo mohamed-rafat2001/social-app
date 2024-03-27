@@ -12,7 +12,7 @@ function Home() {
     return (
         <div className="container-fluid ">
             <div className="row justify-content-between px-3">
-                <aside className="ps-0 ms-0 col-1 col-lg-3 position-relative    ">
+                <aside className="p-0 m-0 col-1 col-lg-3 position-relative    ">
                     <Pages />
                 </aside>
                 <Routes>
@@ -25,8 +25,8 @@ function Home() {
                     } />
                     <Route path='/Profile' element={
                         <>
-                            <div className="col-10 col-sm-9 col-md-7 col-lg-5   "><Profile /></div>
-                            <aside className="col-3 d-none d-md-block  "><h1>Hello right pro..</h1></aside>
+                            <div className="col-10  col-lg-6 p-0 border-start border-end px-3  "><Profile /></div>
+                            <aside className="col-3 d-none d-lg-block  "><h1>Hello right pro..</h1></aside>
                         </>
 
                     } />
