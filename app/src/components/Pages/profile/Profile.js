@@ -53,7 +53,7 @@ function Profile() {
                         </div>
                         <div className='d-flex'>
                             <i className="me-2 text-secondary bi bi-calendar4-week"></i>
-                            <span className=' text-secondary me-2'>joined</span><p className='text-secondary'> {moment(user?.createdAt).calendar()}</p>
+                            <span className='text-secondary me-2'>joined</span><p className='text-secondary'> {moment(user?.createdAt).calendar()}</p>
                         </div>
                     </div>
                     <div className=' col-12 d-flex '>
