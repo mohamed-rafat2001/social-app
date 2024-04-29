@@ -30,13 +30,13 @@ app.use(chatRouter)
 app.use(messageRouter)
 
 app.all('*', (req, res, next) => {
-    res.status(500).send({ status: "fail", message: "this route not defined" })
+    res.status(500).json({ status: "fail", message: "this route not defined" })
 })
 app.use((error, req, res, next) => {
     if (process.env.MODE == "DEV") {
-        return res.status(500).send({ status: "error", message: error.message, code: error.code, stack: error.stack })
+        return res.status(500).json({ status: "error", message: error.message, code: error.code, stack: error.stack })
     }
-    res.status(error.code || 500).send({ status: "error", message: error.message, code: error.code, })
+    res.status(error.code || 500).json({ status: "error", message: error.message, code: error.code, })
 
 })
 require('./db/mongoose')

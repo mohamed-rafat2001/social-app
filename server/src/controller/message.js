@@ -32,7 +32,7 @@ const createMessage = errorHandler(
             return next(error)
         }
         await message.save()
-        res.status(200).send({ status: 'success', data: message })
+        res.status(200).json({ status: 'success', data: message })
     }
 )
 
@@ -45,7 +45,7 @@ const ChatMessages = errorHandler(
             const error = appError.Error('messages not founded', 'fail', 404)
             return next(error)
         }
-        res.status(200).send({ status: 'success', data: message })
+        res.status(200).json({ status: 'success', data: message })
     }
 )
 const deleteMessage = errorHandler(
@@ -56,7 +56,7 @@ const deleteMessage = errorHandler(
             const error = appError.Error('message not deleted or not founded', 'fail', 404)
             return next(error)
         }
-        res.status(200).send({ status: 'success', data: message })
+        res.status(200).json({ status: 'success', data: message })
     }
 )
 const deleteAllMessagesFromChat = errorHandler(
@@ -68,7 +68,7 @@ const deleteAllMessagesFromChat = errorHandler(
             const error = appError.Error('messages not deleted or not founded', 'fail', 404)
             return next(error)
         }
-        res.status(200).send({ status: 'success', data: message })
+        res.status(200).json({ status: 'success', data: message })
     }
 )
 module.exports = {

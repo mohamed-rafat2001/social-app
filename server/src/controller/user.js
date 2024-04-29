@@ -25,7 +25,7 @@ const profileImg = errorHandler(
             { folder: `e-Learning/user/id_${req.user._id}/profileImg` })
         req.user.image = { public_id, secure_url }
         await req.user.save()
-        res.status(200).send({ status: 'success', data: req.user })
+        res.status(200).json({ status: 'success', data: req.user })
     })
 const login = errorHandler(
     async (req, res, next) => {
@@ -78,7 +78,7 @@ const updateProfile = errorHandler(
         const updates = Object.keys(req.body)
         updates.forEach(el => req.user[el] = req.body[el]);
         await req.user.save()
-        res.status(200).send({ status: 'success', data: req.user })
+        res.status(200).json({ status: 'success', data: req.user })
     }
 )
 const deleteAcount = errorHandler(
@@ -88,7 +88,7 @@ const deleteAcount = errorHandler(
             const error = appError.Error('user not founded', 'fail', 404)
             return next(error)
         }
-        res.status(200).send({ status: 'success', data: user })
+        res.status(200).json({ status: 'success', data: user })
 
     }
 )
@@ -100,7 +100,7 @@ const forgotPass = errorHandler(
             Email(user)
         }
         await user.save()
-        res.status(200).send({ status: 'success', data: "please check your email" })
+        res.status(200).json({ status: 'success', data: "please check your email" })
 
     }
 )
