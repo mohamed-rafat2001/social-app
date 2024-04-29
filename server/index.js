@@ -9,15 +9,15 @@ mongoose.set('strictQuery', true)
 
 app.use(express.json())
 app.use(cors())
-const userRouter = require('./routes/user.js')
-const adminRouter = require('./routes/admin')
-const postsRouter = require('./routes/posts')
-const youtubeRouter = require('./routes/youtube')
-const commentRouter = require('./routes/comment')
-const replayRouter = require('./routes/replay')
-const shareRouter = require('./routes/sharePost')
-const chatRouter = require('./routes/chat')
-const messageRouter = require('./routes/message')
+const userRouter = require('./src/routes/user.js')
+const adminRouter = require('./src/routes/admin.js')
+const postsRouter = require('./src/routes/posts.js')
+const youtubeRouter = require('./src/routes/youtube.js')
+const commentRouter = require('./src/routes/comment.js')
+const replayRouter = require('./src/routes/replay.js')
+const shareRouter = require('./src/routes/sharePost.js')
+const chatRouter = require('./src/routes/chat.js')
+const messageRouter = require('./src/routes/message.js')
 
 app.use(userRouter)
 app.use(adminRouter)
@@ -39,7 +39,7 @@ app.use((error, req, res, next) => {
     res.status(error.code || 500).json({ status: "error", message: error.message, code: error.code, })
 
 })
-require('./db/mongoose')
+require('./src/db/mongoose.js')
 
 
 app.listen(port, () => console.log(`server running ${port}`))
