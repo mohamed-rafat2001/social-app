@@ -13,10 +13,10 @@ const addPost = errorHandler(
                     { folder: `e-Learning/user/${req.user._id}/posts` })
                 files.push({ public_id, secure_url })
             }
-            var post = new Posts({ ...req.body, userId: req.user, fileUp: files })
+            var post = new Posts({ ...req.body, userId: req.user._id, fileUp: files })
         }
         if (!req.files) {
-            var post = new Posts({ ...req.body, userId: req.user })
+            var post = new Posts({ ...req.body, userId: req.user._id })
 
         }
         if (!post) {

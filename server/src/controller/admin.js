@@ -1,7 +1,7 @@
 const User = require('../models/user')
-const Posts = require('../models/posts')
 const errorHandler = require('../middelwares/errorHandler')
 const appError = require('../utils/appError')
+
 const Admins = errorHandler(
     async (req, res, next) => {
         if (!req.admins) {

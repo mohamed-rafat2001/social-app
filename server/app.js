@@ -1,10 +1,7 @@
 const express = require('express')
 const app = express()
-const env = require('dotenv').config()
-const port = process.env.PORT
 const cors = require('cors')
 const mongoose = require('mongoose')
-
 mongoose.set('strictQuery', true)
 
 app.use(express.json())
@@ -41,5 +38,4 @@ app.use((error, req, res, next) => {
 })
 require('./src/db/mongoose.js')
 
-
-app.listen(port, () => console.log(`server running ${port}`))
+module.exports = app

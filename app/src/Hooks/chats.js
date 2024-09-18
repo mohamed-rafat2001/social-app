@@ -7,6 +7,6 @@ export const useChats = () => {
 
     useEffect(() => {
         dispatch(chats())
-    }, [data])
+    }, [data, dispatch])
     return { data }
 }
